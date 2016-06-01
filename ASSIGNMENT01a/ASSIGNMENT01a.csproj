@@ -66,11 +66,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About me.aspx" />
+    <Content Include="Content\app.css" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="Projects.aspx" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
+    <Content Include="Services.aspx" />
     <Content Include="Site1.Master" />
     <Content Include="Site2.Master" />
     <Content Include="Fonts\FontAwesome.otf" />
@@ -110,6 +114,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About me.aspx.cs">
+      <DependentUpon>About me.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About me.aspx.designer.cs">
+      <DependentUpon>About me.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contactme.aspx.cs">
       <DependentUpon>Contactme.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -124,7 +135,21 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Projects.aspx.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects.aspx.designer.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
